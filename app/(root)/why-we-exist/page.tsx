@@ -45,19 +45,19 @@ export default function WhyWeExist() {
                     <div className="text-center">
                         <p className="font-voska text-8xl">41%</p>
                         <p className="max-w-60 font-bold">
-                            Don't know what can be recycled.
+                            Don&apos;t know what can be recycled.
                         </p>
                     </div>
                     <div className="text-center">
                         <p className="font-voska text-8xl">62%</p>
                         <p className="max-w-60 font-bold">
-                            Don't know what can be recycled.
+                            Don&apos;t know what can be recycled.
                         </p>
                     </div>
                     <div className="text-center">
                         <p className="font-voska text-8xl">80%</p>
                         <p className="max-w-60 font-bold">
-                            Don't know the impact of recycling.
+                            Don&apos;t know the impact of recycling.
                         </p>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ export default function WhyWeExist() {
                         Say hello to... <b>BIN!</b>
                     </p>
                     <p className="font-voska text-[#285f3c] text-7xl">
-                        &quot;Join the BIN movement and let’s ensure that{" "}
+                        &quot;Join the BIN movement and let&apos;s ensure that{" "}
                         <span className="font-voska-outline">every piece</span>{" "}
                         of material finds its purpose.&quot;
                     </p>
@@ -162,21 +162,22 @@ export default function WhyWeExist() {
                         </div>
                         <p className="max-w-xl text-muted-foreground text-pretty">
                             Transforming the way we work towards a circular
-                            economy is more than a goal; it's a movement. To
-                            build a resilient ecosystem, we need collaboration
-                            from everyone. Producers are already making waves by
-                            shifting towards reusable and recyclable products.
-                            Waste management is stepping up to transform waste
-                            into valuable new resources. This progress is
-                            fantastic and deserves a huge kudos!
+                            economy is more than a goal; it&apos;s a movement.
+                            To build a resilient ecosystem, we need
+                            collaboration from everyone. Producers are already
+                            making waves by shifting towards reusable and
+                            recyclable products. Waste management is stepping up
+                            to transform waste into valuable new resources. This
+                            progress is fantastic and deserves a huge kudos!
                         </p>
                         <p className="max-w-xl text-muted-foreground text-pretty">
-                            But here's the deal: none of these efforts matter
-                            unless we, the consumers, step up and do our part.
-                            The real magic happens when we sort our waste into
-                            dedicated bins. This is where BIN’s passion
-                            ignites—to revolutionize consumer sorting behavior
-                            through gamification, incentives, and education.
+                            But here&apos;s the deal: none of these efforts
+                            matter unless we, the consumers, step up and do our
+                            part. The real magic happens when we sort our waste
+                            into dedicated bins. This is where BIN&apos;s
+                            passion ignites—to revolutionize consumer sorting
+                            behavior through gamification, incentives, and
+                            education.
                         </p>
                         <p className="max-w-xl text-muted-foreground text-pretty">
                             The circular economy becomes a reality when all key
@@ -203,7 +204,7 @@ export default function WhyWeExist() {
                         <span className="text-warning ps-6">
                             Know More, Waste Less:
                         </span>{" "}
-                        We're all about getting the word out. Learn about
+                        We&apos;re all about getting the word out. Learn about
                         sorting, recycling and the real-deal impact of just
                         tossing things away. Knowledge is power!
                     </p>
@@ -211,29 +212,30 @@ export default function WhyWeExist() {
                         <span className="text-warning ps-6">
                             Info at Your Fingertips:
                         </span>{" "}
-                        Who's got the time to play detective on where to recycle
-                        a can? Our app's got you covered—it tells you where to
-                        sort your stuff, based on where you're at. Easy, peasy.
+                        Who&apos;s got the time to play detective on where to
+                        recycle a can? Our app&apos;s got you covered—it tells
+                        you where to sort your stuff, based on where you&apos;re
+                        at. Easy, peasy.
                     </p>
                     <p className={styles.badge3}>
                         <span className="text-warning ps-6">
                             Goodies for Good Deeds:
                         </span>{" "}
-                        Yeah, you read right. We'll toss some goodies your
+                        Yeah, you read right. We&apos;ll toss some goodies your
                         way—cash, coupons, or a heartwarming charity
-                        donation—every time you sort right. Let's make doing
-                        good feel good, shall we?
+                        donation—every time you sort right. Let&apos;s make
+                        doing good feel good, shall we?
                     </p>
                     <p className={styles.badge4}>
                         <span className="text-warning ps-6">
                             Here, There, Everywhere:
                         </span>{" "}
-                        We're all about harmonizing with the local rhythm and
-                        recycling regulations wherever we set foot. Every local
-                        effort resonates globally in our quest for a waste-less
-                        world. Here's to small local steps that leap across
-                        borders, making increased recycling rates less of a
-                        dream and more of a reality.
+                        We&apos;re all about harmonizing with the local rhythm
+                        and recycling regulations wherever we set foot. Every
+                        local effort resonates globally in our quest for a
+                        waste-less world. Here&apos;s to small local steps that
+                        leap across borders, making increased recycling rates
+                        less of a dream and more of a reality.
                     </p>
                 </div>
             </Container>
