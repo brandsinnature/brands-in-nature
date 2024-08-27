@@ -1,0 +1,27 @@
+.badge1,
+.badge2,
+.badge3,
+.badge4 {
+    @apply text-muted relative;
+}
+
+.badge1::before,
+.badge2::before,
+.badge3::before,
+.badge4::before {
+    content: "";
+    @apply absolute w-[18px] h-[18px] bg-contain bg-no-repeat;
+}
+
+.badge1::before {
+    background-image: url("/recycle-badge-1.png");
+}
+.badge2::before {
+    background-image: url("/recycle-badge-2.png");
+}
+.badge3::before {
+    background-image: url("/recycle-badge-3.png");
+}
+.badge4::before {
+    background-image: url("/recycle-badge-4.png");
+}
