@@ -6,7 +6,7 @@
 .badge1::before,
 .badge2::before {
     content: "";
-    @apply absolute top-1 w-4 h-4 bg-contain bg-no-repeat bg-center;
+    @apply absolute top-0.5 lg:top-1 w-4 h-4 bg-contain bg-no-repeat bg-center;
 }
 
 .badge1::before {
