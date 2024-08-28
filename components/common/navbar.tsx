@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "./logo/logo";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -16,13 +16,30 @@ export default function Navbar() {
 
     const isTextWhite = pathname === "/why-we-exist";
 
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => setScrollY(window.scrollY);
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className="relative z-50">
+        <nav
+            className={cn(
+                "top-0 z-50 sticky transition duration-300 ease-in-out",
+                scrollY > 0 && "bg-white shadow-md"
+            )}
+        >
             <Container
-                className="py-4 lg:py-4"
+                className="py-2 lg:py-4"
                 childClassName={cn(
                     "flex flex-wrap justify-between items-center",
-                    isTextWhite && "text-white"
+                    scrollY === 0 && isTextWhite && "text-white"
                 )}
             >
                 <Logo />
