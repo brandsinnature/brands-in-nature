@@ -1,12 +1,12 @@
 .badge1,
 .badge2 {
-    @apply text-muted-foreground relative;
+    @apply text-muted-foreground relative text-sm lg:text-base;
 }
 
 .badge1::before,
 .badge2::before {
     content: "";
-    @apply absolute w-4 h-4 bg-contain bg-no-repeat bg-center;
+    @apply absolute top-1 w-4 h-4 bg-contain bg-no-repeat bg-center;
 }
 
 .badge1::before {

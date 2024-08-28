@@ -22,14 +22,14 @@ export default function WhyWeExist() {
 
             <div className="pt-40 h-[calc(100vh-68px)] text-center text-white">
                 <p className="text-sm uppercase">Our vision</p>
-                <h1 className="mx-auto max-w-3xl font-voska text-8xl">
+                <h1 className="mx-auto max-w-3xl font-voska text-6xl lg:text-8xl">
                     A WORLD <span className="font-voska-outline">FREE</span>{" "}
                     FROM TRASH
                 </h1>
             </div>
 
             <Container className="py-0" childClassName="space-y-20">
-                <div className="grid grid-cols-3">
+                <div className="gap-4 grid grid-cols-1 lg:grid-cols-3">
                     <p className="col-span-2 font-voska text-7xl">
                         <span className="text-primary">4%</span> of all global
                         CO2 emissions come from{" "}
@@ -37,40 +37,40 @@ export default function WhyWeExist() {
                     </p>
 
                     <p
-                        className={`${caveat.className} text-2xl mt-auto leading-none text-right`}
+                        className={`${caveat.className} text-xl lg:text-2xl mt-auto leading-none text-right`}
                     >
                         …with a tripling threat by 2060 as packaging waste is
                         booming.
                     </p>
                 </div>
 
-                <div className="flex justify-around items-center bg-[url('/image-from-rawpixel.webp')] bg-cover bg-no-repeat bg-center p-32 text-destructive">
+                <div className="flex lg:flex-row flex-col justify-around items-center gap-10 lg:gap-0 bg-[url('/image-from-rawpixel.webp')] bg-cover bg-no-repeat bg-center lg:p-32 text-center text-destructive">
                     <div className="text-center">
                         <p className="font-voska text-8xl">41%</p>
-                        <p className="max-w-60 font-bold">
+                        <p className="mx-auto max-w-60 font-bold">
                             Don&apos;t know what can be recycled.
                         </p>
                     </div>
                     <div className="text-center">
                         <p className="font-voska text-8xl">62%</p>
-                        <p className="max-w-60 font-bold">
+                        <p className="mx-auto max-w-60 font-bold">
                             Don&apos;t know what can be recycled.
                         </p>
                     </div>
                     <div className="text-center">
                         <p className="font-voska text-8xl">80%</p>
-                        <p className="max-w-60 font-bold">
+                        <p className="mx-auto max-w-60 font-bold">
                             Don&apos;t know the impact of recycling.
                         </p>
                     </div>
                 </div>
 
-                <div className="gap-10 grid grid-cols-2">
+                <div className="gap-10 space-y-10 lg:grid grid-cols-2">
                     <div className="space-y-6 max-w-lg">
-                        <p className="font-voska text-7xl">
+                        <p className="font-voska text-5xl lg:text-7xl">
                             ...which leads to catastrophic consequences.
                         </p>
-                        <p className="text-muted-foreground">
+                        <p className="text-muted-foreground text-sm lg:text-base">
                             Global warming is happening now, and package waste
                             is a big part of the problem.
                         </p>
@@ -117,11 +117,11 @@ export default function WhyWeExist() {
             </Container>
 
             <Container className="bg-[url('/milk-cartons.png')] bg-contain bg-no-repeat bg-center py-20 text-center">
-                <div className="relative -z-10 space-y-10 bg-[#cceede] p-24 rounded-3xl">
-                    <p className="text-xsl">
+                <div className="relative -z-10 space-y-10 bg-[#cceede] p-12 lg:p-24 rounded-3xl">
+                    <p className="text-sm lg:text-lg">
                         Say hello to... <b>BIN!</b>
                     </p>
-                    <p className="font-voska text-[#285f3c] text-7xl">
+                    <p className="font-voska text-[#285f3c] text-5xl text-pretty lg:text-7xl">
                         &quot;Join the BIN movement and let&apos;s ensure that{" "}
                         <span className="font-voska-outline">every piece</span>{" "}
                         of material finds its purpose.&quot;
@@ -135,14 +135,16 @@ export default function WhyWeExist() {
                             height={40}
                             className="rounded-full"
                         />
-                        <p className="font-medium">Yogesh Bansal, CEO of BIN</p>
+                        <p className="font-medium text-sm lg:text-base">
+                            Yogesh Bansal, CEO of BIN
+                        </p>
                     </div>
                 </div>
             </Container>
 
             <Container>
                 <div className="gap-8 grid grid-cols-3">
-                    <div className="relative mx-auto w-80">
+                    <div className="lg:block relative hidden mx-auto w-80">
                         <Image
                             src="/recycle.png"
                             alt="Get rewarded"
@@ -150,12 +152,12 @@ export default function WhyWeExist() {
                             className="object-contain"
                         />
                     </div>
-                    <div className="space-y-8 col-span-2">
+                    <div className="space-y-5 lg:space-y-8 col-span-3 lg:col-span-2">
                         <div className="space-y-1">
-                            <p className="font-medium text-green-600 text-sm uppercase">
+                            <p className="font-medium text-green-600 text-xs lg:text-sm uppercase">
                                 Our mission
                             </p>
-                            <p className="font-voska text-5xl">
+                            <p className="font-voska text-4xl lg:text-5xl">
                                 Every
                                 <span className="font-voska-outline">
                                     thing
@@ -163,7 +165,7 @@ export default function WhyWeExist() {
                                 has a value
                             </p>
                         </div>
-                        <p className="max-w-xl text-muted-foreground text-pretty">
+                        <p className="lg:max-w-xl text-muted-foreground text-pretty text-sm lg:text-base">
                             Transforming the way we work towards a circular
                             economy is more than a goal; it&apos;s a movement.
                             To build a resilient ecosystem, we need
@@ -173,7 +175,7 @@ export default function WhyWeExist() {
                             to transform waste into valuable new resources. This
                             progress is fantastic and deserves a huge kudos!
                         </p>
-                        <p className="max-w-xl text-muted-foreground text-pretty">
+                        <p className="lg:max-w-xl text-muted-foreground text-pretty text-sm lg:text-base">
                             But here&apos;s the deal: none of these efforts
                             matter unless we, the consumers, step up and do our
                             part. The real magic happens when we sort our waste
@@ -182,7 +184,7 @@ export default function WhyWeExist() {
                             behavior through gamification, incentives, and
                             education.
                         </p>
-                        <p className="max-w-xl text-muted-foreground text-pretty">
+                        <p className="lg:max-w-xl text-muted-foreground text-pretty text-sm lg:text-base">
                             The circular economy becomes a reality when all key
                             players join forces. So, download BIN and turn your
                             waste sorting into a fun, rewarding journey. Or join
@@ -198,11 +200,11 @@ export default function WhyWeExist() {
                 className="border-muted-foreground bg-foreground border-b"
                 childClassName="space-y-8"
             >
-                <p className="font-voska text-5xl text-white">
+                <p className="font-voska text-4xl text-white lg:text-5xl">
                     What we stand for
                 </p>
 
-                <div className="gap-8 grid grid-cols-2">
+                <div className="gap-8 grid lg:grid-cols-2 gri-cols-1">
                     <p className={styles.badge1}>
                         <span className="text-warning ps-6">
                             Know More, Waste Less:

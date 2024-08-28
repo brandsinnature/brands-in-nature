@@ -15,18 +15,18 @@ export const metadata: Metadata = {
 export default function BinForBusiness() {
     return (
         <>
-            <Container className="bg-[#e7dfff] py-0">
-                <div className="gap-8 grid grid-cols-3">
-                    <div className="space-y-10 col-span-2 pt-40 pb-20">
+            <Container className="bg-[#e7dfff] py-0 lg:py-0">
+                <div className="gap-8 grid grid-cols-1 lg:grid-cols-3">
+                    <div className="space-y-10 col-span-2 pt-24 lg:pt-40 pb-20">
                         <div className="space-y-6">
-                            <h1 className="font-voska text-[#005ecc] text-7xl">
+                            <h1 className="font-voska text-[#005ecc] text-5xl lg:text-7xl">
                                 Unleash{" "}
                                 <span className="font-voska-outline">
                                     brand loyalty
                                 </span>{" "}
                                 through recycling.
                             </h1>
-                            <p className="max-w-2xl text-muted-foreground">
+                            <p className="max-w-2xl text-muted-foreground text-sm lg:text-base">
                                 Increase packaging sorting rates through
                                 consumer rewards and let circularity drive brand
                                 sales. Together, we create a sustainable future.
@@ -43,7 +43,7 @@ export default function BinForBusiness() {
                             </Link>
                         </div>
                     </div>
-                    <div className="relative mt-auto min-h-[440px]">
+                    <div className="lg:block relative hidden mt-auto min-h-[440px]">
                         <Image
                             src="/B2B-hero-image.png"
                             alt={"B2B hero Image"}
@@ -55,8 +55,8 @@ export default function BinForBusiness() {
             </Container>
 
             <Container>
-                <div className="gap-8 grid grid-cols-3">
-                    <div className="relative mt-auto min-h-96">
+                <div className="gap-8 grid grid-cols-1 lg:grid-cols-3">
+                    <div className="lg:block relative hidden mt-auto min-h-96">
                         <Image
                             src="/temp/stats-1.png"
                             alt={"Step 1"}
@@ -68,12 +68,12 @@ export default function BinForBusiness() {
                     <div className="space-y-6 col-span-2 m-auto max-w-xl">
                         <div className="space-y-2">
                             <p className="text-primary text-xs">NEWSLETTER</p>
-                            <p className="font-voska text-5xl">
+                            <p className="font-voska text-4xl lg:text-5xl">
                                 Get our free real-time market & consumer
                                 insights
                             </p>
                         </div>
-                        <p>
+                        <p className="text-sm lg:text-base">
                             +3.000 brand owners have already signed up. Sign up
                             for a monthly dose of Trash Talk to get latest trend
                             reports, industry stats and consumer insights for
@@ -90,12 +90,12 @@ export default function BinForBusiness() {
             </Container>
 
             <Container childClassName="space-y-10">
-                <p className="font-voska text-5xl text-center">
+                <p className="font-voska text-4xl text-center lg:text-5xl">
                     Real-time insights from{" "}
                     <span className="text-primary">100M+</span> recycled
                     products
                 </p>
-                <div className="gap-8 grid grid-cols-2 mx-auto max-w-4xl text-sm">
+                <div className="gap-8 grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-4xl text-xs lg:text-sm">
                     <p className={styles.badge1}>
                         <span className="font-semibold text-foreground ps-5">
                             Recycling performance:
@@ -137,19 +137,20 @@ export default function BinForBusiness() {
             </Container>
 
             <Container childClassName="space-y-10">
-                <p className="font-voska text-7xl text-center">
+                <p className="font-voska text-5xl text-center lg:text-7xl">
                     Good for <span className="font-voska-outline">brands</span>.
                 </p>
 
-                <div className="grid grid-cols-3">
+                <div className="gap-8 lg:gap-4 grid grid-cols-1 lg:grid-cols-3">
                     <div className="space-y-3 text-center">
-                        <Image
-                            src={"/temp/good for brands1.png"}
-                            alt="Good for brands"
-                            width={240}
-                            height={240}
-                            className="mx-auto"
-                        />
+                        <div className="relative mx-auto w-44 lg:w-60 h-44 lg:h-60">
+                            <Image
+                                src={"/temp/good for brands1.png"}
+                                alt="Good for brands"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
                         <p className="mx-auto max-w-60 font-voska text-[#005ecc] text-2xl leading-none">
                             Increase sorting & recycling rates.
                         </p>
@@ -161,13 +162,14 @@ export default function BinForBusiness() {
                         </p>
                     </div>
                     <div className="space-y-3 text-center">
-                        <Image
-                            src={"/temp/good for brands2.png"}
-                            alt="Good for brands"
-                            width={240}
-                            height={240}
-                            className="mx-auto"
-                        />
+                        <div className="relative mx-auto w-44 lg:w-60 h-44 lg:h-60">
+                            <Image
+                                src={"/temp/good for brands2.png"}
+                                alt="Good for brands"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
                         <p className="mx-auto max-w-60 font-voska text-[#005ecc] text-2xl leading-none">
                             Build your fan base & drive loyalty.
                         </p>
@@ -179,13 +181,14 @@ export default function BinForBusiness() {
                         </p>
                     </div>
                     <div className="space-y-3 text-center">
-                        <Image
-                            src={"/temp/good for brands3.png"}
-                            alt="Good for brands"
-                            width={240}
-                            height={240}
-                            className="mx-auto"
-                        />
+                        <div className="relative mx-auto w-44 lg:w-60 h-44 lg:h-60">
+                            <Image
+                                src={"/temp/good for brands3.png"}
+                                alt="Good for brands"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
                         <p className="mx-auto max-w-60 font-voska text-[#005ecc] text-2xl leading-none">
                             Get real-time market & consume insights.
                         </p>
@@ -199,7 +202,7 @@ export default function BinForBusiness() {
             </Container>
 
             <Container childClassName="space-y-10">
-                <p className="relative mx-auto max-w-4xl font-voska text-7xl text-center">
+                <p className="relative mx-auto lg:max-w-4xl font-voska text-5xl text-center lg:text-7xl">
                     Make circularity your{" "}
                     <span className="font-voska-outline">
                         competitive advantage
@@ -208,37 +211,44 @@ export default function BinForBusiness() {
                     <Image
                         src={"/stickers.png"}
                         alt="kudos"
+                        width={100}
+                        height={104}
+                        className="-top-20 right-0 absolute lg:hidden object-contain"
+                    />
+                    <Image
+                        src={"/stickers.png"}
+                        alt="kudos"
                         width={168}
                         height={174}
-                        className="-top-20 right-0 absolute object-contain"
+                        className="lg:block -top-20 right-0 absolute hidden object-contain"
                     />
                 </p>
             </Container>
 
             <Container childClassName="space-y-10">
-                <div className="flex justify-between items-center gap-20 bg-[url('/temp/68.png')] bg-contain bg-no-repeat bg-center p-32 text-white">
+                <div className="flex flex-wrap lg:flex-nowrap justify-between items-center gap-10 lg:gap-20 bg-[url('/temp/68.png')] bg-cover lg:bg-contain bg-no-repeat bg-center p-20 lg:p-32 text-white">
                     <div className="text-center">
-                        <p className="font-voska text-8xl">75%</p>
-                        <p className="max-w-60 font-bold">
+                        <p className="font-voska text-6xl lg:text-8xl">75%</p>
+                        <p className="max-w-60 font-bold text-sm lg:text-base">
                             Prefer to buy brands working to reduce littering
                             with BIN.
                         </p>
                     </div>
                     <div className="text-center">
-                        <p className="font-voska text-8xl">45%</p>
-                        <p className="max-w-60 font-bold">
+                        <p className="font-voska text-6xl lg:text-8xl">45%</p>
+                        <p className="max-w-60 font-bold text-sm lg:text-base">
                             View connected brands as more sustainable.
                         </p>
                     </div>
                     <div className="text-center">
-                        <p className="font-voska text-8xl">48%</p>
-                        <p className="max-w-60 font-bold">
+                        <p className="font-voska text-6xl lg:text-8xl">48%</p>
+                        <p className="max-w-60 font-bold text-sm lg:text-base">
                             Recycle more connected brands packages.
                         </p>
                     </div>
                     <div className="text-center">
-                        <p className="font-voska text-8xl">90%</p>
-                        <p className="max-w-60 font-bold">
+                        <p className="font-voska text-6xl lg:text-8xl">90%</p>
+                        <p className="max-w-60 font-bold text-sm lg:text-base">
                             Scan in the moment of consumption.
                         </p>
                     </div>
@@ -246,8 +256,8 @@ export default function BinForBusiness() {
             </Container>
 
             <Container className="bg-[url('/cereal.png')] bg-contain bg-no-repeat bg-center text-center">
-                <div className="relative -z-10 space-y-10 bg-[#e6ddff] p-32 rounded-3xl">
-                    <p className="font-voska text-[#005ecc] text-7xl">
+                <div className="relative -z-10 space-y-10 bg-[#e6ddff] p-16 lg:p-32 rounded-3xl">
+                    <p className="font-voska text-[#005ecc] text-5xl lg:text-7xl">
                         &quot;We want to eliminate the concept of trash because
                         what is trash if every
                         <span className="font-voska-outline">thing</span> has
@@ -262,7 +272,9 @@ export default function BinForBusiness() {
                             height={40}
                             className="rounded-full"
                         />
-                        <p className="font-medium">Yogesh Bansal, CEO of BIN</p>
+                        <p className="font-medium text-sm lg:text-base">
+                            Yogesh Bansal, CEO of BIN
+                        </p>
                     </div>
                 </div>
             </Container>

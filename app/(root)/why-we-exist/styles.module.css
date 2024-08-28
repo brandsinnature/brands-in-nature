@@ -2,7 +2,7 @@
 .badge2,
 .badge3,
 .badge4 {
-    @apply text-muted relative;
+    @apply text-muted relative text-sm lg:text-base;
 }
 
 .badge1::before,

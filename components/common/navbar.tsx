@@ -5,10 +5,14 @@ import React, { useState } from "react";
 import Logo from "./logo/logo";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import Container from "../ui/container";
+import Container from "@/components/ui/container";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { Button } from "@/components/ui/button";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 
 export default function Navbar() {
     const pathname = usePathname();
+    const [open, setOpen] = useState(false);
 
     const isTextWhite = pathname === "/why-we-exist";
 
@@ -24,31 +28,55 @@ export default function Navbar() {
                 <Logo />
 
                 <div className="block lg:hidden">
-                    <button className="flex items-center px-3 py-2 border border-black hover:border-black rounded">
-                        <svg
-                            className="w-3 h-3 fill-current"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                        </svg>
-                    </button>
+                    <Drawer open={open} onOpenChange={setOpen}>
+                        <DrawerTrigger asChild>
+                            <Button variant={"link"} className="px-0">
+                                <HiMenuAlt3 size={28} />
+                            </Button>
+                        </DrawerTrigger>
+                        <DrawerContent>
+                            <div className="space-y-2 pt-6 pb-10">
+                                <Links pathname={pathname} setOpen={setOpen} />
+                            </div>
+                        </DrawerContent>
+                    </Drawer>
                 </div>
 
-                <div className="lg:flex lg:items-center gap-8 hidden w-full lg:w-auto text-sm">
-                    <LinkItem href="/" pathname={pathname}>
-                        Home
-                    </LinkItem>
-                    <LinkItem href="/why-we-exist" pathname={pathname}>
-                        Why We Exist
-                    </LinkItem>
-                    <LinkItem href="/bin-for-business" pathname={pathname}>
-                        BIN For Business
-                    </LinkItem>
+                <div className="lg:flex items-center gap-8 hidden text-sm">
+                    <Links pathname={pathname} setOpen={setOpen} />
                 </div>
             </Container>
         </nav>
+    );
+}
+
+function Links({
+    pathname,
+    setOpen,
+}: {
+    pathname: string;
+    setOpen: (status: boolean) => void;
+}) {
+    return (
+        <>
+            <LinkItem href="/" pathname={pathname} setOpen={setOpen}>
+                Home
+            </LinkItem>
+            <LinkItem
+                href="/why-we-exist"
+                pathname={pathname}
+                setOpen={setOpen}
+            >
+                Why We Exist
+            </LinkItem>
+            <LinkItem
+                href="/bin-for-business"
+                pathname={pathname}
+                setOpen={setOpen}
+            >
+                BIN For Business
+            </LinkItem>
+        </>
     );
 }
 
@@ -56,10 +84,12 @@ function LinkItem({
     href,
     children,
     pathname,
+    setOpen,
 }: {
     href: string;
     children: React.ReactNode;
     pathname: string;
+    setOpen: (status: boolean) => void;
 }) {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -71,12 +101,16 @@ function LinkItem({
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <Link href={href} className="block lg:inline-block mt-4 lg:mt-0">
+            <Link
+                href={href}
+                className="block lg:inline-block mt-4 lg:mt-0"
+                onClick={() => setOpen(false)}
+            >
                 {children}
             </Link>
             <span
                 className={cn(
-                    "bg-primary w-full h-[3px] transition-transform duration-300 ease-in-out mx-auto rounded-full origin-center",
+                    "bg-primary w-20 lg:w-full h-[3px] transition-transform duration-300 ease-in-out mx-auto rounded-full origin-center",
                     isHovered ? "scale-x-100" : "scale-x-0",
                     isActive && "scale-x-100"
                 )}
