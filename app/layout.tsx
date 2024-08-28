@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { voska, voskaOutline } from "@/lib/font";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter, voska, voskaOutline } from "@/lib/font";
 
 export const metadata: Metadata = {
     title: "Brands In Nature",

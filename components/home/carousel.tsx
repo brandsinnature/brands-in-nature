@@ -68,8 +68,8 @@ export default function HomeCarousel() {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="lg:flex hidden" />
+            <CarouselNext className="lg:flex hidden" />
         </Carousel>
     );
 }

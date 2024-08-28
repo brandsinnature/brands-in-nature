@@ -3,22 +3,29 @@ import { Separator } from "@/components/ui/separator";
 import Logo from "./logo/logo";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     return (
         <footer>
             <Container className="bg-foreground py-0">
                 <div className="gap-8 grid grid-cols-2">
-                    <div className="space-y-8 py-20">
-                        <p className="font-voska text-7xl text-white">
+                    <div className="space-y-8 col-span-2 lg:col-span-1 py-20">
+                        <p className="font-voska text-5xl text-white lg:text-7xl">
                             Join the movement. Get rewarded.
                         </p>
                         <div className="space-y-4">
-                            <p className="text-white">Do something good.</p>
-                            <Button size={"lg"}>Become Partner</Button>
+                            <p className="text-sm text-white lg:text-base">
+                                Do something good.
+                            </p>
+                            <div>
+                                <Link href={"/bin-for-business"}>
+                                    <Button size={"lg"}>Become Partner</Button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                    <div className="relative">
+                    <div className="lg:block relative hidden">
                         <Image
                             src="/CTA-screens.webp"
                             alt="Cta"
@@ -31,12 +38,14 @@ export default function Footer() {
 
             <Container>
                 <div className="grid grid-cols-7">
-                    <Logo />
+                    <div className="col-span-4 lg:col-span-1">
+                        <Logo />
+                    </div>
                 </div>
 
                 <Separator className="my-10" />
 
-                <div className="flex justify-between items-center text-muted-foreground text-xs">
+                <div className="block lg:flex justify-between items-center space-y-6 lg:space-y-1 text-muted-foreground text-xs">
                     <div className="space-y-1">
                         <p>
                             Copyright © 2024 Fursat Farms Private Limited. All

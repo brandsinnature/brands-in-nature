@@ -1,0 +1,23 @@
+.badge1,
+.badge2 {
+    @apply text-muted-foreground relative;
+}
+
+.badge1::before,
+.badge2::before {
+    content: "";
+    @apply absolute w-4 h-4 bg-contain bg-no-repeat bg-center;
+}
+
+.badge1::before {
+    background-image: url("/check.png");
+}
+.badge2::before {
+    background-image: url("/blue-check.png");
+}
+
+.arrow::before {
+    content: "";
+    @apply absolute -top-6 -left-2 w-6 h-10 bg-contain bg-no-repeat bg-center;
+    background-image: url("/arrow_v2.png");
+}

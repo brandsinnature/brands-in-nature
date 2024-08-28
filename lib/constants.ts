@@ -17,3 +17,6 @@ export const Testimonials = [
         },
     },
 ];
+
+export const WA_ME =
+    "https://wa.me/7047474942?text=Hello%2C%20I'm%20interested%20in%20BIN";

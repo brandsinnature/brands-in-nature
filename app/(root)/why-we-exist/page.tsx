@@ -1,5 +1,4 @@
 import Container from "@/components/ui/container";
-import { Caveat } from "next/font/google";
 import {
     Accordion,
     AccordionContent,
@@ -7,10 +6,14 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import Image from "next/image";
-
 import styles from "./styles.module.css";
+import { Metadata } from "next";
+import { caveat } from "@/lib/font";
 
-const caveat = Caveat({ subsets: ["latin"] });
+export const metadata: Metadata = {
+    title: "Why We Exist",
+    description: "Brands In Nature",
+};
 
 export default function WhyWeExist() {
     return (
@@ -181,9 +184,9 @@ export default function WhyWeExist() {
                         </p>
                         <p className="max-w-xl text-muted-foreground text-pretty">
                             The circular economy becomes a reality when all key
-                            players join forces. So, download Bower and turn
-                            your waste sorting into a fun, rewarding journey. Or
-                            join us and support your consumers in this growing
+                            players join forces. So, download BIN and turn your
+                            waste sorting into a fun, rewarding journey. Or join
+                            us and support your consumers in this growing
                             movement for a circular tomorrow. Together, we can
                             make recycling not just a habit, but a lifestyle.
                         </p>

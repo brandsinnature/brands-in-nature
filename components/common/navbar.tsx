@@ -15,7 +15,7 @@ export default function Navbar() {
     return (
         <nav className="relative z-50">
             <Container
-                className="py-4"
+                className="py-4 lg:py-4"
                 childClassName={cn(
                     "flex flex-wrap justify-between items-center",
                     isTextWhite && "text-white"
@@ -36,7 +36,7 @@ export default function Navbar() {
                     </button>
                 </div>
 
-                <div className="block lg:flex lg:items-center gap-8 w-full lg:w-auto text-sm">
+                <div className="lg:flex lg:items-center gap-8 hidden w-full lg:w-auto text-sm">
                     <LinkItem href="/" pathname={pathname}>
                         Home
                     </LinkItem>

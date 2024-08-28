@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Caveat, Inter } from "next/font/google";
 
 const voskaOutline = localFont({
     src: [
@@ -29,4 +30,8 @@ const voska = localFont({
     variable: "--font-voska",
 });
 
-export { voska, voskaOutline };
+const caveat = Caveat({ subsets: ["latin"] });
+
+const inter = Inter({ subsets: ["latin"] });
+
+export { voska, voskaOutline, caveat, inter };
