@@ -129,11 +129,11 @@ export default function Home() {
       <section className="py-16 lg:py-24 text-center">
         <div className="space-y-4">
           <p className="mx-auto max-w-4xl font-voska text-5xl lg:text-7xl">
-            Be <span className="text-primary">recyclers</span> & support our
+            As <span className="text-primary">recyclers</span> support our
             precious planet.
           </p>
           <p className="text-muted-foreground">
-            Join us in making a difference, one scan at a time.
+            Let us make a difference, one scan at a time.
           </p>
 
           {/* <div className="grid grid-cols-6 mx-10">
