@@ -68,9 +68,8 @@ export default function BinForBusiness() {
               </p>
             </div>
             <p className="text-sm lg:text-base">
-              +3.000 brand owners have already signed up. Sign up for a monthly
-              dose of Trash Talk to get latest trend reports, industry stats and
-              consumer insights for free.
+              Sign up for a monthly dose of Trash Talk to get latest trend
+              reports, industry stats and consumer insights for free.
             </p>
 
             <div>
