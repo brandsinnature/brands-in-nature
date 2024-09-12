@@ -17,6 +17,14 @@ import Link from "next/link";
 // Array of carousel items
 const carouselItems = [
   {
+    title: "Digital Deposit Refund Systems",
+    description:
+      "Revolutionizing Waste Management for Our Common Future through a digital DRS",
+    imageUrl:
+      "https://drive.google.com/file/d/1TI40OuCHWnaSwDl6rsyrvVMBgHpCDaxV/view?usp=sharing",
+    link: "https://mybin.superblog.cloud/digital-deposit-refund-systems-revolutionizing-waste-management-for-a-sustainable-future-cm0zdgyf7000si5morv3tcica/",
+  },
+  {
     title: "No Return, No Refund",
     description:
       "A DRS requires consumers to pay a deposit which is refunded upon returning the reusable part of the packaging.",
