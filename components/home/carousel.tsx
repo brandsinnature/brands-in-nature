@@ -16,20 +16,28 @@ import Link from "next/link";
 
 // Array of carousel items
 const carouselItems = [
-  // {
-  //   title: "Digital Deposit Refund Systems",
-  //   description:
-  //     "Revolutionizing Waste Management for Our Common Future through a digital DRS",
-  //   imageUrl:
-  //     "https://drive.google.com/file/d/1DMsFtMkBeXHlAHvj9H3SkkBi1A0xo-g_/view?usp=sharing",
-  //   link: "https://mybin.superblog.cloud/digital-deposit-refund-systems-revolutionizing-waste-management-for-a-sustainable-future-cm0zdgyf7000si5morv3tcica/",
-  // },
+  {
+    title: "Digital Deposit Refund Systems",
+    description:
+      "Revolutionizing Waste Management for Our Common Future through a digital DRS",
+    imageUrl:
+      "https://res.cloudinary.com/dkpbcfayi/image/upload/v1726475047/BIN_Plastics_dvsk03.jpg",
+    link: "https://mybin.superblog.cloud/digital-deposit-refund-systems-revolutionizing-waste-management-for-a-sustainable-future-cm0zdgyf7000si5morv3tcica/",
+  },
+  {
+    title: " BIN DDRS Whitepaper",
+    description:
+      "Whitepaper on DDRS, where consumers pay a deposit which is refunded upon returning the reusable part of the packaging.",
+    imageUrl:
+      "https://res.cloudinary.com/dkpbcfayi/image/upload/v1726475050/EUROPE_DRS_piygwt.png",
+    link: "https://doc.storydoc.ai/mi8m3U",
+  },
   {
     title: "No Return, No Refund",
     description:
       "A DRS requires consumers to pay a deposit which is refunded upon returning the reusable part of the packaging.",
     imageUrl:
-      "https://drive.google.com/uc?id=1Irh7U981S1_Ad7nYJoekg6WGp4OToUyx",
+      "https://res.cloudinary.com/dkpbcfayi/image/upload/v1726475050/pexels-marta-ortigosa-1877261-3480494_z68luq.jpg",
     link: "https://www.lsu.edu/business/economics/files/workingpapers/pap00_18.pdf",
   },
   {
@@ -37,7 +45,7 @@ const carouselItems = [
     description:
       "In 2023, 70% of plastic waste remains uncollected, leaking into the environment or landfills.",
     imageUrl:
-      "https://drive.google.com/uc?id=1ebmlotl2PmwIw8yR3SGctGydo9NqaEkv",
+      "https://res.cloudinary.com/dkpbcfayi/image/upload/v1726475047/pexels-steve-850216_lpevam.jpg",
     link: "https://endplasticwaste.org/en/our-stories/plastic-waste-management-framework",
   },
   {
@@ -45,7 +53,7 @@ const carouselItems = [
     description:
       "An Instrument for the Implementation of a Plastics Circular Economy",
     imageUrl:
-      "https://drive.google.com/uc?id=185qwNf7JSRvoFH9fYBvZw85UC9ZvpN0K",
+      "https://res.cloudinary.com/dkpbcfayi/image/upload/v1726475047/pexels-tuesday-temptation-190692-798638_jgz0gl.jpg",
     link: "https://iucn.org/sites/default/files/2022-08/economic_assessment_of_a_deposit_refund_system_drs_an_instrument_for_the_implementation_of_a_plastics_circular_economy.pdf",
   },
   {
@@ -53,7 +61,7 @@ const carouselItems = [
     description:
       "Products returned from customers and remaining value recovered/upcycled",
     imageUrl:
-      "https://drive.google.com/uc?id=1dHbponvYmqf9qSM2IbrFmnGKjcWaTUoQ",
+      "https://res.cloudinary.com/dkpbcfayi/image/upload/v1726475047/pexels-vladvictoria-2682683_m6varx.jpg",
     link: "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=d8097299650a2e243d5fe388f04c3ea2eb3439c3",
   },
   {
@@ -61,7 +69,7 @@ const carouselItems = [
     description:
       "Average collection and recycling rate for packaging waste covered by the DRS in European countries is about 91%.",
     imageUrl:
-      "https://drive.google.com/uc?id=1GpXmdkgOJnJpHfIrrz7g5Ss6KcTc3muv",
+      "https://res.cloudinary.com/dkpbcfayi/image/upload/v1726475050/EUROPE_DRS_piygwt.png",
     link: "https://www2.deloitte.com/content/dam/Deloitte/pl/Documents/Brochures/pl_DRS_Brochure_Deloitte.pdf",
   },
   {
