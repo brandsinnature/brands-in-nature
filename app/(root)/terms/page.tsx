@@ -86,7 +86,7 @@ export default function TermsPage() {
       </section>
       <section>
         <h2 className="font-bold text-xl">9. Governing Law</h2>
-        <p>These terms are governed by the laws of West Bengal, India.</p>
+        <p>These terms are governed by the laws of West Bengal India.</p>
       </section>
       <section>
         <h2 className="font-bold text-xl">10. Changes to Terms</h2>
